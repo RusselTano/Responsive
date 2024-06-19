@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  gap: 3rem;
+
+  padding: 4rem;
+  background-color: #371b58;
+  color: white;
+}
+
+.nav section:first-child {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  justify-content: space-between;
+}
+
+/* *************** Grid vs Flexbox *********** */
+
+/* Grid */
+
+/* .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  background-color: #333;
+}
+
+.grid-item {
+  width: 100px;
+  height: 100px;
+}
+
+.grid-item1 {
+  background-color: #f00;
+}
+.grid-item2 {
+  background-color: rgb(8, 154, 32);
+}
+.grid-item3 {
+  background-color: rgb(242, 255, 0);
+}
+.grid-item4 {
+  background-color: rgb(34, 0, 255);
+} */
+
+/* flex */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 600px;
+  background-color: #333;
+
+  align-items: center;
+
+  align-content: center;
+  justify-content: start;
+}
+
+.flex-item {
+  width: 200px;
+  height: 150px;
+  border-radius: 8px;
+
+  &.flex-item1 {
+    color: #000;
+    background-color: #fff;
+  }
+}
+
+/* .flex-item1 {
+  background-color: #f00;
+} */
+.flex-item2 {
+  background-color: rgb(8, 154, 32);
+}
+.flex-item3 {
+  background-color: rgb(242, 255, 0);
+}
+.flex-item4 {
+  background-color: rgb(34, 0, 255);
+}
+
+/* flex box-properties */
+/* 
+******* Container *********
+flex-direction
+flex-wrap
+flex-flow = flex-direction + flex-wrap
+
+justify-content
+align-item
+align-content
+
+************ Items ***************
+order
+flex-grow 0
+flex-shrink 1
+flex-basis auto
+flex
+align-self
+gap
+ */

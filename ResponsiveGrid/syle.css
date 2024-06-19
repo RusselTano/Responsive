@@ -1,0 +1,47 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: minmax(10rem, 1fr) repeat(8, minmax(min-content,14rem)) minmax(10rem, 1fr);
+}
+
+
+.gridContainer{
+    height: 800px;
+    background-color: sandybrown;
+    /* grid-column: start / end; */
+    grid-column: 2/10;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
+
+    grid-template-rows: repeat(5,1fr);
+    /* margin: 12rem 0 12rem 0; */
+}
+
+.gridItems {
+    height: 250px;
+    border: 2px solid #000;
+}
+
+.gridItems:nth-child(1){
+    background-color: #fff;
+}
+.gridItems:nth-child(2){
+    background-color: #adbb1a;
+}
+.gridItems:nth-child(3){
+    background-color: #13be52;
+}
+.gridItems:nth-child(4){
+    background-color: #15b7ba;
+}
+.gridItems:nth-child(5){
+    background-color: #18097b;
+}
+
+/* Auto fit s'etendre != Auto-fill cree de l'espace */
